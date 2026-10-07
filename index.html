@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Jogo</title>
+</head>
+<body>
+    <div class="container">
+        <header class="topo">
+
+            <div class="pontuacao">
+                <img src="img/fantasma-icone.png" alt="icone-fantasma">
+                Pontuação: 
+                <div id="contagem-pontuacao">0</div>
+            </div>
+
+            <div class="tempo">
+                <img src="img/relogio.png" alt="relogio">
+                <div id="contagem-tempo">30</div>s
+            </div>
+
+        </header>
+        
+
+        <div class="area-principal">
+            <img src="img/obstaculo-barril.png" alt="" id="obstaculo-barril-01" class="obstaculo">
+            <img src="img/obstaculo-barril.png" alt="" id="obstaculo-barril-02" class="obstaculo">
+            <img src="img/obstaculo-barril.png" alt="" id="obstaculo-barril-03" class="obstaculo">
+            <img src="img/obstaculo-caixa.png" alt="" id="obstaculo-caixa-01" class="obstaculo">
+            <img src="img/obstaculo-caixa.png" alt="" id="obstaculo-caixa-02" class="obstaculo">
+            <img src="img/obstaculo-caixa.png" alt="" id="obstaculo-caixa-03" class="obstaculo">
+            <img src="img/obstaculo-carvao.png" alt="" id="obstaculo-carvao-01" class="obstaculo">
+            <img src="img/obstaculo-carvao.png" alt="" id="obstaculo-carvao-02" class="obstaculo">
+            <img src="img/obstaculo-carvao.png" alt="" id="obstaculo-carvao-03" class="obstaculo">
+            <img src="img/obstaculo-caveira.png" alt="" id="obstaculo-caveira-01" class="obstaculo">
+            <img src="img/obstaculo-caveira.png" alt="" id="obstaculo-caveira-02" class="obstaculo">
+            <img src="img/obstaculo-caveira.png" alt="" id="obstaculo-caveira-03" class="obstaculo">
+            <img src="img/obstaculo-lapide.png" alt="" id="obstaculo-lapide-01" class="obstaculo">
+            <img src="img/obstaculo-lapide.png" alt="" id="obstaculo-lapide-02" class="obstaculo">
+            <img src="img/obstaculo-lapide.png" alt="" id="obstaculo-lapide-03" class="obstaculo">
+            <img src="img/obstaculo-muro.png" alt="" id="obstaculo-muro-01" class="obstaculo"> 
+            <img src="img/obstaculo-muro.png" alt="" id="obstaculo-muro-02" class="obstaculo">
+            <img src="img/obstaculo-muro.png" alt="" id="obstaculo-muro-03" class="obstaculo">
+            <img src="img/obstaculo-muro2.png" alt="" id="obstaculo-muro2-01" class="obstaculo">
+            <img src="img/obstaculo-muro2.png" alt="" id="obstaculo-muro2-02" class="obstaculo">
+            <img src="img/obstaculo-muro2.png" alt="" id="obstaculo-muro2-03" class="obstaculo">
+            <img src="img/obstaculo-pilar.png" alt="" id="obstaculo-pilar-01" class="obstaculo">
+            <img src="img/obstaculo-pilar.png" alt="" id="obstaculo-pilar-02" class="obstaculo">
+            <img src="img/obstaculo-pilar.png" alt="" id="obstaculo-pilar-03" class="obstaculo">
+            <img src="img/tocha-base.png" alt="" id="tocha-01" class="obstaculo">
+            <img src="img/tocha-base.png" alt="" id="tocha-02" class="obstaculo">
+            <img src="img/tocha-base.png" alt="" id="tocha-03" class="obstaculo">
+            <img src="img/tocha-direita.png" alt="" id="tocha-direita-01" class="obstaculo">
+            <img src="img/tocha-direita.png" alt="" id="tocha-direita-02" class="obstaculo">
+            <img src="img/tocha-direita.png" alt="" id="tocha-direita-03" class="obstaculo">
+            <img src="img/tocha-esquerda.png" alt="" id="tocha-esquerda-01" class="obstaculo">
+            <img src="img/tocha-esquerda.png" alt="" id="tocha-esquerda-02" class="obstaculo">
+            <img src="img/tocha-esquerda.png" alt="" id="tocha-esquerda-03" class="obstaculo">
+
+            <div class="player">
+                <img src="img/personagem-default.png" alt="" id="personagem-default" class="player">
+                <img src="img/personagem-andando-direita.png" alt="" id="personagem-direita" class="player">
+                <img src="img/personagem-andando-esquerda.png" alt="" id="personagem-esquerda" class="player">
+                <img src="img/personagem-andando-frente.png" alt="" id="personagem-frente" class="player">
+                <img src="img/personagem-andando-trás.png" alt="" id="personagem-tras" class="player">    
+            </div>
+            
+            
+            <img src="img/fantasma-azul.png" alt="" id="fantasma-azul" class="personagens">
+            <img src="img/fantasma-branco.png" alt="" id="fantasma-branco" class="personagens">
+            <img src="img/fantasma-roxo.png" alt="" id="fantasma-roxo" class="personagens">
+            <img src="img/fantasma-verde.png" alt="" id="fantasma-verde" class="personagens">
+            <div id="colisao-paredes"></div>
+            <div id="fim-jogo">
+                <h1>FIM DE JOGO</h1>
+                <button id="jogar">Jogar novamente</button>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    margin: 0;
+    padding:0;
+
+
+    height: 100%;
+    width: 100%;
+
+    color: aliceblue;
+    font-size: 35px;
+
+    font-family: 'Pixelify Sans', monospace;
+
+    font-weight: 100;
+    
+    background-color: #10141c;
+
+}
+
+.container{
+    padding: 20px;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+
+    box-sizing: border-box;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.topo{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    row-gap: 5px;
+}
+
+.pontuacao, .tempo{
+    column-gap: 10px;
+    display: flex;
+}
+
+.pontuacao img{
+    width: 30px;
+    height: 30px;
+}
+
+.tempo img{
+    width: auto;
+    height: 50px;
+}
+
+.area-principal{
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-size: contain;
+
+    width: 82vw;
+    max-width: 45vw;
+    height: 82vh;
+
+    padding: 0;
+
+    align-self: center;
+    position: relative;
+    
+}
+
+.obstaculo, .personagens{
+    position: absolute;
+    width: 5%;
+    height: auto;
+}
+
+.player{
+    position: absolute;
+    width: 5%;
+    height: 8%;
+
+    top: 8%;
+    left: 2.5%;
+}
+
+.player img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#obstaculo-barril-01{
+    bottom: 35%;
+    right: 12%;
+}
+
+#obstaculo-barril-02{
+    top: 51%;
+    left: 41%;
+}
+
+#obstaculo-barril-03{
+    top: 15.5%;
+    right: 41.2%;
+}
+
+#obstaculo-caixa-01{ 
+    top: 24.5%;
+    right: 20.8%;
+}
+
+#obstaculo-caixa-02{
+    bottom: 34.9%;
+    left: 16.5%;
+}
+
+#obstaculo-caixa-03{
+    bottom: 19.5%;
+    right: 37%;
+}
+
+#obstaculo-carvao-01{ 
+    bottom: 11.5%;
+    left: 11.8%;
+}
+
+#obstaculo-carvao-02{
+    top: 16.8%;
+    left: 28.5%;
+}
+
+#obstaculo-carvao-03{
+    bottom: 11.5%;
+    right: 16.5%;
+}
+
+#obstaculo-lapide-01{
+    bottom: 11%;
+    left: 32.5%;
+}
+
+#obstaculo-lapide-02{
+    top: 38.5%;
+    left: 12%;
+}
+
+#obstaculo-lapide-03{
+    top: 35%;
+    right: 33%;
+}
+
+#obstaculo-pilar-01{
+    top: 23.5%;
+    left: 16.2%;
+}
+
+#obstaculo-pilar-02{
+    top: 23.5%;
+    right: 15.9%;  
+}
+
+#obstaculo-pilar-03{
+    bottom: 23%;
+    right: 16.5%;  
+}
+
+#obstaculo-muro-01{
+    bottom: 35%;
+    left: 11.5%;
+}
+
+#obstaculo-muro-02{
+    top: 52%;
+    left: 46%; 
+}
+
+#obstaculo-muro-03{
+    top: 52%;
+    left: 51%;    
+}
+
+#obstaculo-muro2-01{
+    top: 32%;
+    left: 28.3%;
+}
+
+#obstaculo-muro2-02{
+    top: 44%;
+    right: 20.5%;
+}
+
+#obstaculo-muro2-03{
+    bottom: 23%;
+    left: 16.5%;
+
+}
+
+#tocha-01{
+    bottom: 8%;
+    right: 28.7%;
+}
+
+#tocha-02{
+    top: 22%;
+    right: 47.7%;
+}
+
+#tocha-03{
+    bottom: 46%;
+    left: 22.5%;
+}
+
+#tocha-direita-01{
+    top: 15%;
+    right: 2.5%;
+}
+
+#tocha-direita-02{
+    bottom: 15%;
+    right: 2.5%;
+}
+
+#tocha-direita-03{
+    top: 46%;
+    right: 2.5%;
+}
+
+#tocha-esquerda-01{
+    top: 15%;
+    left: 2.5%;
+}
+
+#tocha-esquerda-02{
+    bottom: 15%;
+    left: 2.5%;
+}
+
+#tocha-esquerda-03{
+    top: 46%;
+    left: 2.5%;
+}
+
+#obstaculo-caveira-01{
+    bottom: 5.5%;    
+    right: 3%;
+}
+
+#obstaculo-caveira-02{
+    top: 12.5%;
+    left: 10%;
+}
+
+#obstaculo-caveira-03{
+    top: 12.5%;
+    left: 6%;
+}
+
+#fantasma-azul, #fantasma-branco, #fantasma-roxo, #fantasma-verde{
+    opacity: 0;
+}
+
+#colisao-paredes{
+    justify-self: center;
+
+    width: 95%;
+    height: 81%;
+
+    top: 13%;
+
+    position: absolute;
+}
+
+#fim-jogo{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    align-content: center;
+    justify-items: center;
+
+    background-color: #10141c79;
+
+    opacity: 0;
+}
+
+button{
+    margin-left: 13.5vw;
+    justify-self: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Pixelify Sans', monospace;
+
+    background-color: #10141c;
+    border: aliceblue 2px solid;
+
+    color: aliceblue;
+}
